@@ -1,0 +1,104 @@
+/* *{border: red solid 1px} */
+
+body{
+  /* background-color: rgb(122, 194, 202); */
+  background-image: URL("./img/Background.png");
+  background-size: cover;
+}
+
+#homePageContainerGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+    gap: 1rem;
+    list-style-type: none;
+    margin:0;
+    height: 750px;
+}
+
+#homePageContainerGrid div{
+  place-self: center, stretch;
+  text-align: center;
+  text-justify: center;
+}
+
+
+
+.computer{
+  display: flex;
+  flex-direction: column;
+  place-self: end start;
+  margin-bottom: -40px;
+  padding-left: 20px;
+  transition: 0.2s;
+  animation: hover 2s ease-in-out 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.computer:hover .zz{
+  visibility: visible;
+}
+
+
+.robot{
+  display: flex;
+  flex-direction: column;
+  place-self: end end;
+  margin-bottom: -40px;
+  padding-right: 20px;
+  transition: 0.2s;
+  animation: hover 2s ease-in-out 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.title:hover{
+  transform: translateY(5%)
+}
+
+.robot:hover .zz{
+visibility: visible;
+}
+
+.zz{
+align-self: center;
+visibility: hidden;
+margin-bottom: -15px;
+}
+
+.center{
+  place-self: center;
+}
+
+.left{
+  place-self: center end ;
+}
+
+.right{
+  place-self: center start;
+}
+
+.options{
+  place-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 35px;
+  padding-bottom: 0px;;
+}
+
+.options img:hover{
+  transform: translateY(5%)
+}
+
+.grass{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  place-self: end;
+  padding-bottom: 20px;
+}
+
+@keyframes hover {
+  50%{transform: translateY(5%)}
+  100% {transform: translateY(0%)}
+
+}
