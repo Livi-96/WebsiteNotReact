@@ -2,7 +2,7 @@
 
 body{
   /* background-color: rgb(122, 194, 202); */
-  background-image: URL("./img/Background.png");
+  background-image: URL("./img/Background2.png");
   background-size: cover;
 }
 
@@ -75,6 +75,10 @@ margin-bottom: -15px;
 
 .right{
   place-self: center start;
+}
+
+.stars img:hover{
+  transform: translateY(5%)
 }
 
 .options{
